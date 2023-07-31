@@ -298,14 +298,14 @@ button:active {
   padding: 6rem;
   border-radius: 25px;
   gap: 8rem;
-  align-items: baseline;
-  height: 1000px;
+  align-items: start;
+  height: 600px;
 }
 .about h1 {
   font-size: 3rem;
 }
 .about p {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .about div {
   width: 50%;
@@ -334,7 +334,7 @@ button:active {
 }
 
 .image-2 {
-  top: 25rem;
+  top: 15rem;
   transform: rotate(25deg);
 }
 
