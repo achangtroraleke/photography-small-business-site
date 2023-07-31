@@ -276,7 +276,7 @@ button:active {
   justify-content: space-between;
 }
 .price-card h1 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .price-card ul {
   display: flex;
@@ -285,7 +285,7 @@ button:active {
   margin-left: 0px;
 }
 .price-card li {
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 .price-card button {
   width: 100%;
