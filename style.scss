@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+
+$font-stack: Helvetica, sans-serif;
+$photo-font:'Style Script', cursive;
+$primary-color: #333;
+$background-color:white;
+$border-radius: 25px;
+
+
+@keyframes fadeIn{
+    from{
+      opacity: 0;
+    
+    }
+  
+    to{
+      opacity: 1;
+    }
+  }
+
+html,
+body {
+  font: 100% $font-stack;
+  margin: 0px;
+  padding: 0px;
+  background-image: url('./assets/images/background.jpg');
+  background-repeat:repeat;
+  background-size: 300px;
+
+}
+
+button:hover{
+    background-color: $primary-color;
+    color: white;
+    cursor: pointer;
+}
+
+button:active{
+    transform: translateY(2px);
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+.no-margin{
+    margin:0px;
+}
+
+.no-padding{
+    padding: 0px;
+}
+
+.center{
+    margin: auto;
+}
+
+.navbar{
+    width: 100%;
+    background-color: $primary-color;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar-nav{
+    color: white;
+    width: 90%;
+    align-items: center;
+    
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    ul{
+        list-style: none;
+        margin-left: auto;
+        gap: 5rem;
+        li{
+            font-size: 1.5rem;
+            position: relative;
+            width: fit-content;
+    
+    }
+  }
+}
+
+  .no-margin {
+    margin: none;
+  }
+  
+  .flex{
+    display: flex;
+  }
+
+  .flex-column{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vertical-center{
+    position: relative;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 50%;
+  }
+
+  .wrapper{
+    width: 60%;
+  }
+
+
+.box-shadow{
+    box-shadow: gray  -1px 2.5px 3px 3px;
+}
+
+.photo-shadow{
+    box-shadow: 0 0 8px 2px #888;
+}
+
+.discount{
+    text-decoration: line-through;
+}
+
+.container{
+    position: relative;
+}
+
+.vertical-center{
+    position: relative;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 50%;
+  }
+
+.content{
+    position: relative;
+    background-color: $primary-color;
+}
+
+.landing{
+    align-items:flex-start;
+    position: relative;
+    top: 25rem;
+    padding: 8rem 4rem;
+    border-radius: $border-radius;
+    justify-content: space-between;
+    background-color: $primary-color;
+    gap: 3rem;
+    animation: fadeIn 1s;
+    animation-fill-mode: forwards;
+    a{
+        color: white;
+        text-decoration: underline;
+    }
+    a:hover{
+        text-decoration: underline;
+        color: #FFD700;
+    }
+}
+
+.landing-box{
+    color: white;
+    font-size: 36px;
+    max-width: 50%;
+    gap: 2rem;
+    span{
+        color: #FFD700;
+    }
+    h2{
+        font-size: 36px;
+    }
+    img{
+        position: relative;
+        width: 100%;
+        border-radius: $border-radius;
+    }
+
+}
+
+.link-group{
+    gap: 5rem;
+}
+
+.feed{
+    position: relative;
+    height: 100%;
+    gap: 5rem;
+    backdrop-filter: blur(5px);
+    align-items: center;
+    border-radius: $border-radius;
+    padding: 50px 0 50px 0;
+    button{
+        height: 5rem;
+        width: 5rem;
+    }
+}
+
+.reviews{
+    width:50%;
+    background-color: $primary-color;
+    color: white;
+    align-items: center;
+    border-radius: $border-radius;
+    padding: 25px;
+    h1{
+        font-family: $photo-font;
+        font-weight: 100;
+    }
+    
+    h1, h2{
+        text-align: center;
+        font-size: 3rem;
+    }
+
+}
+
+.photo-content{
+    align-items: center;
+    position: relative;
+    height: 50rem;
+    gap: 1rem;
+}
+
+.photo-box{
+    animation: fadeIn 1s;
+    animation-fill-mode: forwards;
+    position: relative;
+    font-family: $photo-font;
+    background-color: white;
+    padding: 50px 50px 75px 50px;
+    width: 100%;
+    max-width: 50rem;
+    display: none;
+    color: black;
+    h1{
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    p{
+        font-size: 2rem;
+    }
+    img{
+        position: absolute;
+        width: 100%;
+    }
+}
+
+.photo-image{
+    position: relative;
+    height: 90%;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.content{
+    position: relative;
+    top: 10rem;
+}
+
+
+
+.price-box{
+    animation: fadeIn 1s;
+    animation-fill-mode: forwards;
+    top: 25rem;
+    background-color: $primary-color;
+    color: white;
+    padding: 50px;
+    border-radius: $border-radius;
+    gap: 4rem;
+    height: 900px;
+    h1{
+        font-size: 4rem;
+        text-align: center;
+    }
+    span{
+        color: #FFD700;
+    }
+}
+
+.price-card-group{
+    justify-content: space-between;
+    height: 100%;
+}
+
+.price-card{
+    background-color: white;
+    color: black;
+    border-radius: $border-radius;
+    padding: 15px;
+    width: 30%;
+    justify-content: space-between;
+    h1{
+        font-size:3rem;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        margin-left: 0px;
+    }
+    li{
+        font-size: 2rem;
+        
+    }
+    button{
+        width: 100%;
+        border-radius: 5px;
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+}
+
+
+.about{
+    color: white;
+    padding: 6rem;
+    border-radius: $border-radius;
+    gap: 8rem;
+    align-items: baseline;
+    height: 1000px;
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        font-size: 3rem;
+    }
+
+    div{
+        width: 50%;
+    }
+    .photo-content{
+        height: auto;
+        width: 100%;
+    }
+    .photo-box{
+        position: absolute;
+        padding: 15px 15px 60px 15px;
+        width: 70%;
+        display: block !important;
+    }
+    img{position: relative;
+    height: 100%;}
+}
+.image-container{
+    position: relative;
+}
+
+.image-1{
+    transform: rotate(-15deg);
+    
+}
+
+.image-2{
+    top: 25rem;
+    transform: rotate(25deg);
+}

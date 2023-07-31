@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+html,
+body {
+  font: 100% Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-image: url("./assets/images/background.jpg");
+  background-repeat: repeat;
+  background-size: 300px;
+}
+
+button:hover {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+.no-padding {
+  padding: 0px;
+}
+
+.center {
+  margin: auto;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #333;
+  position: fixed;
+  z-index: 1;
+}
+
+.navbar-nav {
+  color: white;
+  width: 90%;
+  align-items: center;
+}
+.navbar-nav a {
+  color: white;
+  text-decoration: none;
+}
+.navbar-nav a:hover {
+  text-decoration: underline;
+}
+.navbar-nav ul {
+  list-style: none;
+  margin-left: auto;
+  gap: 5rem;
+}
+.navbar-nav ul li {
+  font-size: 1.5rem;
+  position: relative;
+  width: fit-content;
+}
+
+.no-margin {
+  margin: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical-center {
+  position: relative;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.wrapper {
+  width: 60%;
+}
+
+.box-shadow {
+  box-shadow: gray -1px 2.5px 3px 3px;
+}
+
+.photo-shadow {
+  box-shadow: 0 0 8px 2px #888;
+}
+
+.discount {
+  text-decoration: line-through;
+}
+
+.container {
+  position: relative;
+}
+
+.vertical-center {
+  position: relative;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.content {
+  position: relative;
+  background-color: #333;
+}
+
+.landing {
+  align-items: flex-start;
+  position: relative;
+  top: 25rem;
+  padding: 8rem 4rem;
+  border-radius: 25px;
+  justify-content: space-between;
+  background-color: #333;
+  gap: 3rem;
+  animation: fadeIn 1s;
+  animation-fill-mode: forwards;
+}
+.landing a {
+  color: white;
+  text-decoration: underline;
+}
+.landing a:hover {
+  text-decoration: underline;
+  color: #FFD700;
+}
+
+.landing-box {
+  color: white;
+  font-size: 36px;
+  max-width: 50%;
+  gap: 2rem;
+}
+.landing-box span {
+  color: #FFD700;
+}
+.landing-box h2 {
+  font-size: 36px;
+}
+.landing-box img {
+  position: relative;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.link-group {
+  gap: 5rem;
+}
+
+.feed {
+  position: relative;
+  height: 100%;
+  gap: 5rem;
+  backdrop-filter: blur(5px);
+  align-items: center;
+  border-radius: 25px;
+  padding: 50px 0 50px 0;
+}
+.feed button {
+  height: 5rem;
+  width: 5rem;
+}
+
+.reviews {
+  width: 50%;
+  background-color: #333;
+  color: white;
+  align-items: center;
+  border-radius: 25px;
+  padding: 25px;
+}
+.reviews h1 {
+  font-family: "Style Script", cursive;
+  font-weight: 100;
+}
+.reviews h1, .reviews h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.photo-content {
+  align-items: center;
+  position: relative;
+  height: 50rem;
+  gap: 1rem;
+}
+
+.photo-box {
+  animation: fadeIn 1s;
+  animation-fill-mode: forwards;
+  position: relative;
+  font-family: "Style Script", cursive;
+  background-color: white;
+  padding: 50px 50px 75px 50px;
+  width: 100%;
+  max-width: 50rem;
+  display: none;
+  color: black;
+}
+.photo-box h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+.photo-box p {
+  font-size: 2rem;
+}
+.photo-box img {
+  position: absolute;
+  width: 100%;
+}
+
+.photo-image {
+  position: relative;
+  height: 90%;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.content {
+  position: relative;
+  top: 10rem;
+}
+
+.price-box {
+  animation: fadeIn 1s;
+  animation-fill-mode: forwards;
+  top: 25rem;
+  background-color: #333;
+  color: white;
+  padding: 50px;
+  border-radius: 25px;
+  gap: 4rem;
+  height: 900px;
+}
+.price-box h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+.price-box span {
+  color: #FFD700;
+}
+
+.price-card-group {
+  justify-content: space-between;
+  height: 100%;
+}
+
+.price-card {
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+  padding: 15px;
+  width: 30%;
+  justify-content: space-between;
+}
+.price-card h1 {
+  font-size: 3rem;
+}
+.price-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-left: 0px;
+}
+.price-card li {
+  font-size: 2rem;
+}
+.price-card button {
+  width: 100%;
+  border-radius: 5px;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+
+.about {
+  color: white;
+  padding: 6rem;
+  border-radius: 25px;
+  gap: 8rem;
+  align-items: baseline;
+  height: 1000px;
+}
+.about h1 {
+  font-size: 3rem;
+}
+.about p {
+  font-size: 3rem;
+}
+.about div {
+  width: 50%;
+}
+.about .photo-content {
+  height: auto;
+  width: 100%;
+}
+.about .photo-box {
+  position: absolute;
+  padding: 15px 15px 60px 15px;
+  width: 70%;
+  display: block !important;
+}
+.about img {
+  position: relative;
+  height: 100%;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-1 {
+  transform: rotate(-15deg);
+}
+
+.image-2 {
+  top: 25rem;
+  transform: rotate(25deg);
+}
+
+/*# sourceMappingURL=style.css.map */
