@@ -251,7 +251,7 @@ button:active {
   padding: 50px;
   border-radius: 25px;
   gap: 4rem;
-  height: 900px;
+
 }
 .price-box h1 {
   font-size: 4rem;
@@ -267,6 +267,7 @@ button:active {
 }
 
 .price-card {
+  position: relative;
   background-color: white;
   color: black;
   border-radius: 25px;
